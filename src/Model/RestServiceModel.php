@@ -598,7 +598,7 @@ class RestServiceModel implements EventManagerAwareInterface
                     $routeName => array(
                         'type' => 'Segment',
                         'options' => array(
-                            'route' => sprintf('%s[/:%s]', $route, $routeIdentifier),
+                            'route' => sprintf('%s[/:%s[/]]', $route, $routeIdentifier),
                             'defaults' => array(
                                 'controller' => $controllerService,
                             ),
